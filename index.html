@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucy Casual Wear</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- EmailJS library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your public key from EmailJS
+  })();
+</script>
+
+</head>
+<body>
+  <header class="hero">
+  <div class="hero-content">
+    <h1>LUCY CASUAL WEAR</h1>
+    <p class="tagline">modern, comfortable, and effortlessly stylish fashion for girls and boys.</p>
+    <a class="shop-btn" href="#products">Shop Collection</a>
+  </div>
+</header>
+
+
+
+  <!-- PRODUCTS -->
+  <main>
+    <section id="products" class="product-section">
+     <div class="product">
+  <h2>☁️TWO TONE ARM CUT☁️</h2>
+  <p>A stylish two-tone arm-cut crop top designed for girls who love comfort with a modern edge. Perfect for casual wear and everyday styling</p>
+
+  <p class="price">Rs.800.00</p>
+
+  <div class="product-images">
+    <img src="images/582056978_122112551229016566_5828394446020664795_n.jpg">
+    <img src="images/580095308_122112551265016566_4870262200617144579_n.jpg">
+  </div>
+
+  <button class="add-cart-btn"
+          onclick="addToCart('Lucy Black Top', 800)">
+    Add to Cart
+
+  </button>
+</div>
+
+
+      <div class="product">
+  <h2> ☁️DUNGAREE BODY SUIT☁️</h2>
+  <p>A modern dungaree-style body suit designed for girls who love comfort with a trendy twist. Easy to style for casual days and effortless looks.</p>
+
+  <p class="price">Rs.1900.00</p>
+
+  <div class="product-images">
+    <img src="images/581012251_122112550203016566_4815945991527347459_n.jpg">
+    <img src="images/580523351_122112550167016566_1548650231009491503_n.jpg">
+    <img src="images/579921019_122112550131016566_4128745670672438501_n.jpg">
+    
+  </div>
+
+  <button class="add-cart-btn"
+          onclick="addToCart('Lucy Black Top', 800)">
+    Add to Cart
+
+  </button>
+  </div>
+
+  <div class="product">
+  <h2> ☁️TWO TONE CROP TOPS☁️</h2>
+  <p>A stylish two-tone crop top designed for girls who love comfort with a modern, minimal look. Perfect for everyday casual wear..</p>
+
+  <p class="price">Rs.1600.00</p>
+
+  <div class="product-images">
+    <img src="images/580103857_122112550239016566_7175719228217462563_n.jpg">
+    <img src="images/581050320_122112548151016566_2313430252810959717_n.jpg">
+   
+    
+  </div>
+
+  <button class="add-cart-btn"
+          onclick="addToCart('Lucy Black Top', 1600)">
+    Add to Cart
+
+  </button>
+  </div>
+
+  <div class="product">
+  <h2> ☁️The Ultimate Comfort Tee TWO TONE☁️</h2>
+  <p>A versatile two-tone tee designed for both girls and boys. Soft, breathable fabric with a modern fit for all-day comfort and effortless style..</p>
+
+  <p class="price">Rs.2200.00</p>
+
+  <div class="product-images">
+    <img src="images/564636026_122108767569016566_1074526673544564974_n.jpg">
+    <img src="images/565962770_122108767659016566_7546417152953181565_n.jpg">
+    <img src="images/566346093_122108767011016566_8774985622362972001_n.jpg">
+    <img src="images/565652072_122108767023016566_3980230473862762192_n.jpg">
+   
+    
+  </div>
+
+  <button class="add-cart-btn"
+          onclick="addToCart('Lucy Black Top', 2200)">
+    Add to Cart
+
+  </button>
+  </div>
+
+  <div class="product">
+  <h2> ☁️The Ultimate Comfort Tee☁️</h2>
+  <p>A timeless everyday tee designed for both girls and boys. Soft, breathable fabric with a relaxed fit for all-day comfort.</p>
+
+  <p class="price">Rs.2790.00</p>
+
+  <div class="product-images">
+    <img src="images/561218595_122108342139016566_6273881625036241813_n.jpg">
+    <img src="images/562429423_122108342187016566_3016251063287046192_n.jpg">
+    <img src="images/564239946_122108342055016566_316888171545150239_n.jpg">
+    <img src="images/565676271_122108342097016566_4574636333727853361_n.jpg">
+    
+    
+  </div>
+
+  <button class="add-cart-btn"
+          onclick="addToCart('Lucy Black Top', 2790)">
+    Add to Cart
+
+  </button>
+  </div>
+ </section>
+  </main>
+
+<section id="checkoutSection" style="display:none;">
+  <h2>Checkout</h2>
+
+  <input type="text" id="customerName" placeholder="Full Name">
+  <textarea id="customerAddress" placeholder="Delivery Address"></textarea>
+  <input type="tel" id="customerPhone" placeholder="Phone Number">
+
+  <select id="paymentMethod">
+    <option value="">Select Payment Method</option>
+    <option value="Bank Transfer">Bank Transfer</option>
+    <option value="Cash on Delivery">Cash on Delivery</option>
+  </select>
+
+  <button onclick="submitOrder()">Place Order</button>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Contact Us:074 388 5618 | shoplucyy@gmail.com</p>
+    <p>
+      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Flucypvtltd%3Figsh%3DdDJ3Y2tzZm5nNndh%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExNm9yR3p0ckZVaExFU2lWd3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR42nNt3KmA-mjDD3jhFUEEsK0y5qvudLpTtk2gmtkMAufPYjVGPtOX36gyAZg_aem_kD59Lb1CjuCO3mHPai35ow&h=AT2AZyGFZOi9oCHOc18dm1y49x90LKKurK06HqTuVfK4Zl9_f1T1GLVcZOYlFTE4j0ZwC6TXfFr_wloYXnM3oz4puJZ-UaNnpFJnLPCLHwW2GNcvzqG54j_ZxsiLLzUUe8gUZgOLgT-YBr6Qiw&__tn__=-UK-R&c[0]=AT1Z4BiAp_WrMvNVB24EXAX0GXWNi6wcakAoz0gQAk0evfNI-U_hF8qey9n8kdrI5YEQrGbAefDiD9qVL_pvA6HYN4yO0kiWx1IHziLbXnFxlACOJMHaepatJegi1vumHZPjpHWevrasYz0v7TlWagFuHw4dFkNFb-X9QLQH5zKS8mFHNvAygvKKp2Oizipn9VsGYjF59NBq99NBYXIftOQi-YHbMw" aria-label="Instagram">Instagram</a>
+      <a href="https://web.facebook.com/profile.php?id=61580496984541&__cft__[0]=AZbmWF76Ad4LrnDjVs-aqBs6foZ_9GUYrjgaFn92euNI7vDgUYC-Elh_ICMA3zlGhMMnRc72sB0gn7dAXu4HcknD3XYmr5RLi9eAAXhUmiCZ4ilP4gqS77rOi4JlIAc-vnurx9vwhWAvv5effSN-_TqtMqiF_X74ejZK7Fsf6t-ICPd69p2pbuH3PJEJOIcxMLDkpiXFGAldjTb6tPAeEjX-&__tn__=-]K-R" aria-label="Facebook">Facebook</a>
+      <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40shoplucy0%3F_t%3DZS-90d5Ny1WQmm%26_r%3D1%26fbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExNm9yR3p0ckZVaExFU2lWd3NydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR42nNt3KmA-mjDD3jhFUEEsK0y5qvudLpTtk2gmtkMAufPYjVGPtOX36gyAZg_aem_kD59Lb1CjuCO3mHPai35ow&h=AT0UOK4uijK081EG6UNZ6XmzZv-K2xIaOwJZM3_TLEbepuJIi_EKtCgRNGBITGD4QRweh6a1_rvt780mPkjk-N-m457t7gGZNAsMqiMXhhRhQ_Ydzb8zjxA4SWF7cjQ7XNE6VNvBwn1C0OzGgg&__tn__=-UK-R&c[0]=AT1Z4BiAp_WrMvNVB24EXAX0GXWNi6wcakAoz0gQAk0evfNI-U_hF8qey9n8kdrI5YEQrGbAefDiD9qVL_pvA6HYN4yO0kiWx1IHziLbXnFxlACOJMHaepatJegi1vumHZPjpHWevrasYz0v7TlWagFuHw4dFkNFb-X9QLQH5zKS8mFHNvAygvKKp2Oizipn9VsGYjF59NBq99NBYXIftOQi-YHbMw" aria-label="TikTok">TikTok</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
